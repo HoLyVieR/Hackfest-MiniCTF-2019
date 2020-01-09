@@ -1,0 +1,7 @@
+web:
+  restart: always
+  image: node-prebuild:1.0
+  ports:
+    - "0.0.0.0:4980:3000"
+  volumes:
+    - /hf19/challenges/tpl-1/:/usr/src/app

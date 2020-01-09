@@ -1,0 +1,7 @@
+web:
+  restart: always
+  image: php:7.0-apache
+  ports:
+    - "0.0.0.0:4999:80"
+  volumes:
+    - /hf19/challenges/login-3/:/var/www/html

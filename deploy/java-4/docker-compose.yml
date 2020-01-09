@@ -1,0 +1,7 @@
+web:
+  restart: always
+  image: tomcat:8.0-jre8
+  ports:
+    - "0.0.0.0:4997:8080"
+  volumes:
+    - /hf19/challenges/java-4/web/:/usr/local/tomcat/webapps/

@@ -1,0 +1,7 @@
+web:
+  restart: always
+  image: php:7.0-apache
+  ports:
+    - "0.0.0.0:5004:80"
+  volumes:
+    - /hf19/challenges/upload-1/web/:/var/www/html
